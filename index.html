@@ -8,6 +8,9 @@
   <meta name="description"
     content="Nueve libros y guías digitales para elegir, preparar y disfrutar mejor el café en casa.">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
   <!-- Google Tag Manager -->
@@ -155,9 +158,10 @@
 
     <section class="section section--cream" aria-labelledby="testimonios-title">
       <div class="container">
-
+        
         <div class="testimonial-layout">
-
+<p class="eyebrow eyebrow--dark">TESTIMONIOS</p>
+          <h2>Los que ya preparan el café de especialidad en su casa.</h2>
           <div class="carousel" aria-roledescription="carrusel" aria-label="Testimonios de muestra">
             <article aria-live="polite">
               <blockquote id="testimonial-quote"></blockquote>
@@ -232,18 +236,31 @@
           </div>
         </div>
         <aside class="order-card" aria-label="Resumen de compra">
-          <span class="discount">75% DE DESCUENTO</span>
-          <h3>El Arte del Café en Casa</h3>
-          <div class="order-line"><span>9 libros y guías digitales</span><strong>incluidos</strong></div>
-          <div class="order-line"><span>Acceso</span><strong>inmediato</strong></div>
-          <div class="order-price"><span>Valor de referencia <del>ARS
-                74.700</del></span><small>PRECIO LANZAMIENTO SOLO POR HOY</small><strong><em>ARS</em> 22.400</strong>
+          <div class="order-value">
+            <span>Valor total del pack</span>
+            <del>ARS 74.700</del>
           </div>
-          <a class="button button--primary button--full"
-            href="https://artedelcafeencasa.puntoycomastore.com/cart/56071953842249:1">COMPRAR AHORA</a>
-          <p class="secure">✓ Pago seguro con Mercado Pago · Acceso digital · 7 días de garantía</p>
+          <p class="order-today">HOY PAGÁS</p>
+          <p class="order-total"><span>ARS</span> 22.400</p>
+          <p class="order-saving">70% OFF · ahorrás ARS 52.300</p>
+
+          <p class="countdown-label">EL PRECIO DE LANZAMIENTO TERMINA EN</p>
+          <div class="countdown" role="timer" aria-label="Tiempo restante de la oferta">
+            <div><strong id="countdown-hours">00</strong><span>HORAS</span></div>
+            <div><strong id="countdown-minutes">00</strong><span>MIN</span></div>
+            <div><strong id="countdown-seconds">00</strong><span>SEG</span></div>
+          </div>
+          <p class="countdown-note">El precio promocional finaliza hoy a las 23:59.</p>
+
+          <a class="button button--primary button--full order-button"
+            href="https://artedelcafeencasa.puntoycomastore.com/cart/56071953842249:1">
+            <strong>COMPRAR AHORA</strong>
+            <span>Acceso inmediato · 7 días de garantía</span>
+          </a>
+          <p class="secure">Pago seguro con tarjeta o Mercado Pago</p>
         </aside>
       </div>
+
     </section>
 
     <section class="section section--cream guarantee">
@@ -255,7 +272,8 @@
           <p class="eyebrow eyebrow--dark">REVISALO CON TRANQUILIDAD</p>
           <h2>Tenés 7 días para descubrir si cambia tu manera de preparar café.</h2>
           <p>Entrá, recorré el material y evaluá si te ayuda a preparar mejor. Si no cumple con tus expectativas, podés
-            solicitar la devolución dentro de los 7 días posteriores a la compra. Me escribís a puntoycoma.fq@gmail.com
+            solicitar la devolución dentro de los 7 días posteriores a la compra. Me escribís a
+            puntoycoma.fq@gmail.com
             y te devolvemos <strong>sin preguntarte, sin formulario y sin que tengas que explicar nada.</strong></p>
         </div>
       </div>
@@ -308,8 +326,54 @@
     </section>
 
     <footer class="site-footer">
-      <div class="container"><strong>El Arte del Café en Casa</strong><span>Otro producto digital de Punto y Coma Store
-          de Argentina</span>
+      <div class="container footer-content">
+        <h2>El Arte del Café en Casa</h2>
+        <a class="footer-email" href="mailto:puntoycoma.fq@gmail.com">puntoycoma.fq@gmail.com</a>
+
+        <div class="policies" aria-label="Políticas de compra">
+          <details class="policy-card">
+            <summary><span aria-hidden="true">▸</span> Términos y condiciones</summary>
+            <div class="policy-card__content">
+              <p><strong>El Arte del Café en Casa</strong> es una colección de productos digitales descargables,
+                comercializada por Punto y Coma Store de Argentina. Al comprar obtenés una licencia de uso personal e
+                intransferible. No está permitida la reventa, distribución ni reproducción total o parcial del
+                contenido.</p>
+              <p>El acceso se habilita después de acreditarse el pago y se envía a la dirección de correo informada en
+                la compra. El contenido tiene fines informativos y educativos. Las recetas y recomendaciones no
+                constituyen asesoramiento médico ni nutricional. Los precios están expresados en pesos argentinos.</p>
+            </div>
+          </details>
+
+          <details class="policy-card">
+            <summary><span aria-hidden="true">▸</span> Política de privacidad</summary>
+            <div class="policy-card__content">
+              <p>Usamos tu nombre, correo electrónico y los datos necesarios para procesar el pago únicamente para
+                entregarte el producto, responder consultas y enviarte comunicaciones relacionadas con tu compra. No
+                vendemos ni cedemos tus datos a terceros.</p>
+              <p>Los pagos se procesan mediante plataformas externas y no almacenamos los datos de tu tarjeta. Podés
+                solicitar el acceso, la rectificación o la supresión de tus datos escribiendo a <a
+                  href="mailto:puntoycoma.fq@gmail.com">puntoycoma.fq@gmail.com</a>, de acuerdo con la Ley 25.326 de
+                Protección de Datos Personales.</p>
+            </div>
+          </details>
+
+          <details class="policy-card">
+            <summary><span aria-hidden="true">▸</span> Política de reembolso</summary>
+            <div class="policy-card__content">
+              <p>La oferta incluye una garantía comercial de satisfacción de 7 días. Además, en las compras a distancia
+                podés ejercer el derecho de revocación dentro de los 10 días corridos contados desde la celebración del
+                contrato o la entrega del producto, lo último que ocurra, conforme al artículo 34 de la Ley 24.240.</p>
+              <p>Para solicitarlo, escribinos desde el correo utilizado en la compra. El reintegro se realizará por el
+                mismo medio de pago, sujeto a los plazos operativos de la plataforma. Esta política no limita los demás
+                derechos que te reconoce la normativa de defensa del consumidor.</p>
+              <a class="policy-action"
+                href="mailto:puntoycoma.fq@gmail.com?subject=Solicitud%20de%20arrepentimiento%20de%20compra">BOTÓN DE
+                ARREPENTIMIENTO</a>
+            </div>
+          </details>
+        </div>
+
+        <p class="footer-legal">© 2026 El Arte del Café en Casa · Punto y Coma Store de Argentina</p>
       </div>
     </footer>
 
